@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_calendar"
+    tools:context="com.example.yongliu.habitloop.ui.CalendarActivity"
+    android:orientation="vertical"
+    android:background="@color/colorActivityBackground">
+
+    <LinearLayout
+        android:id="@+id/calendarTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/CalendarLeftButton"
+            android:id="@+id/calendarLeftArrowButton"/>
+
+        <TextView
+            android:id="@+id/calendarMonthYearTextView"
+            style="@style/CalendarMonthName"
+            android:text="Current Month Year"/>
+
+        <Button
+            style="@style/CalendarRightButton"
+            android:id="@+id/calendarRightArrowButton"/>
+
+    </LinearLayout>
+
+    <!-- days header -->
+    <LinearLayout
+        android:id="@+id/calendarHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sundayHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#222222"
+            android:text="SUN"/>
+
+        <TextView
+            android:id="@+id/mondayHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#222222"
+            android:text="MON"/>
+
+        <TextView
+            android:id="@+id/tuesdayHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#222222"
+            android:text="TUE"/>
+
+        <TextView
+            android:id="@+id/wednesdayHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#222222"
+            android:text="WED"/>
+
+        <TextView
+            android:id="@+id/thursdayHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#222222"
+            android:text="THU"/>
+
+        <TextView
+            android:id="@+id/fridayHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#222222"
+            android:text="FRI"/>
+
+        <TextView
+            android:id="@+id/saturdayHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#222222"
+            android:text="SAT"/>
+
+    </LinearLayout>
+
+    <!--
+    <ImageView
+        android:id="@+id/calendarWeekdaysImageView"
+        android:src="@drawable/ic_blue_weekdays"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true">
+    </ImageView>
+    -->
+    <GridView
+    android:id="@+id/calendarGridView"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:layout_alignParentLeft="true"
+    android:numColumns="7" >
+
+    </GridView>
+
+
+</LinearLayout>

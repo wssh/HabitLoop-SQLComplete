@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/habitNameInput"
+           android:hint="@string/habit_name_hint"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:text="@string/time_label"
+           android:id="@+id/timeLabel"
+           android:layout_marginTop="@dimen/margintop_infoitems"
+           android:layout_below="@+id/habitNameInput"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"/>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_below="@+id/timeLabel"
+           android:id="@+id/linearLayout">
+
+              <EditText
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:inputType="time"
+                  android:layout_weight="3"
+                  android:id="@+id/pickTimeStart"
+                  android:hint="@string/start_time_hint"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="2"
+                  android:textAppearance="?android:textAppearanceLarge"
+                  android:text="To"
+                  android:textAlignment="center"/>
+
+              <EditText
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="3"
+                  android:inputType="time"
+                  android:id="@+id/pickTimeEnd"
+                  android:hint="@string/end_time_hint"/>
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:text="@string/days_label"
+           android:id="@+id/daysLabel"
+           android:layout_below="@+id/linearLayout"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginTop="@dimen/margintop_infoitems"/>
+
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/mon_check_text"
+           android:id="@+id/mondayCheck"
+           android:layout_below="@+id/daysLabel"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"/>
+
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tue_check_text"
+           android:id="@+id/tuesdayCheck"
+           android:layout_below="@+id/daysLabel"
+           android:layout_toRightOf="@+id/mondayCheck"
+           android:layout_toEndOf="@+id/mondayCheck"/>
+
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/wed_check_text"
+           android:id="@+id/wednesdayCheck"
+           android:layout_below="@+id/daysLabel"
+           android:layout_above="@+id/sundayCheck"
+           android:layout_toRightOf="@+id/tuesdayCheck"
+           android:layout_toEndOf="@+id/tuesdayCheck"/>
+
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/thu_check_text"
+           android:id="@+id/thursdayCheck"
+           android:layout_below="@+id/daysLabel"
+           android:layout_above="@+id/sundayCheck"
+           android:layout_toRightOf="@+id/wednesdayCheck"
+           android:layout_toEndOf="@+id/wednesdayCheck"/>
+
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/fri_check_text"
+           android:id="@+id/fridayCheck"
+           android:layout_below="@+id/mondayCheck"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"/>
+
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/sat_check_text"
+           android:id="@+id/saturdayCheck"
+           android:layout_alignTop="@+id/fridayCheck"
+           android:layout_toRightOf="@+id/mondayCheck"
+           android:layout_toEndOf="@+id/mondayCheck"/>
+
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/sun_check_text"
+           android:id="@+id/sundayCheck"
+           android:layout_alignTop="@+id/saturdayCheck"
+           android:layout_toRightOf="@+id/saturdayCheck"
+           android:layout_toEndOf="@+id/saturdayCheck"/>
+
+</merge>

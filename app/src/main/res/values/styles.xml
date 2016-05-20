@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- calendar -->
+    <style name="CalendarViewLayout">
+        <item name="android:background">@color/colorCalendarBackground</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CalendarArrowButton">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="CalendarLeftButton" parent="CalendarArrowButton">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/left_arrow</item>
+    </style>
+
+    <style name="CalendarRightButton" parent="CalendarArrowButton">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/right_arrow</item>
+    </style>
+
+    <style name="CalendarMonthName">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="CalendarWeekday">
+        <item name="android:textColor">@color/colorCalendarWeekdayText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <!-- Graph -->
+    <style name="ArrowButton">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="LeftButton" parent="ArrowButton">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/left_arrow</item>
+    </style>
+
+    <style name="RightButton" parent="ArrowButton">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/right_arrow</item>
+    </style>
+
+    <style name="GraphHabitTitle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

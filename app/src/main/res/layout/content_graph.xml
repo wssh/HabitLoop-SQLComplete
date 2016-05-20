@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorActivityBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_graph"
+    tools:context="com.example.yongliu.habitloop.ui.GraphActivity">
+
+    <LinearLayout
+        android:id="@+id/graphTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/CalendarLeftButton"
+            android:id="@+id/leftArrowButton"/>
+
+        <TextView
+            android:id="@+id/graphHabitTextView"
+            style="@style/GraphHabitTitle"
+            android:text="Current Habit"
+            />
+
+        <Button
+            style="@style/RightButton"
+            android:id="@+id/rightArrowButton"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Past Six Months"
+        android:layout_below="@id/graphTitleView"
+        android:id="@+id/sixMonthLabel"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/graph_margin_top"
+        android:textSize="25sp"
+        android:background="@color/colorSubTheme"
+        android:textStyle="bold"
+        android:textColor="@color/colorMainTheme"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/sixMonthGraph"
+        android:background="@color/colorGraphBackground"
+        android:layout_marginTop="@dimen/graph_margin_top"
+        android:layout_below="@+id/sixMonthLabel"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Past Six Weeks"
+        android:layout_below="@id/sixMonthGraph"
+        android:id="@+id/sixWeekLabel"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/graph_margin_top"
+        android:textSize="25sp"
+        android:background="@color/colorSubTheme"
+        android:textStyle="bold"
+        android:textColor="@color/colorMainTheme"/>
+
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/sixWeekGraph"
+        android:background="@color/colorGraphBackground"
+        android:layout_below="@id/sixWeekLabel"
+        android:layout_marginTop="@dimen/graph_margin_top"/>
+
+
+</RelativeLayout>

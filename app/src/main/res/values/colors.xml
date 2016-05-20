@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="actionbarBackground">#22ff99</color>
+    <!-- app theme colors -->
+    <color name="colorActivityBackground">#ad0000</color>
+    <color name="colorListItem">#ffffff</color>
+    <color name="colorMainTheme">#ad0000</color>
+    <color name="colorSubTheme">#3c3c3c</color>
+    <color name="colorMyTheme">#3c3c3c</color>
+    <color name="colorListItemHover">#3c3c3c</color>
+    <color name="colorListItemPress">#ff2222</color>
+    <color name="colorTextInDark">#ffffff</color>
+    <color name="colorHintInDark">#dddddd</color>
+    <color name="colorDelButton">#ad0000</color>
+    <color name="colorDelButtonPress">#ff0000</color>
+    <color name="colorEditButton">#ad0000</color>
+    <color name="colorEditButtonPress">#ff0000</color>
+
+    <!-- calendar -->
+    <color name="colorCalendarBackground">#ffffff</color>
+    <color name="colorCalendarWeekdayText">#bbbbbb</color>
+    <color name="colorGridcellTextGreyOut">#c7c7c7</color>
+    <color name="colorGridcellToday">#4b82ff</color>
+    <color name="colorGridcellComplete">#00ff00</color>
+    <color name="colorGridcellIncomplete">#ff0000</color>
+    <color name="colorGridcellBackground">#ffffff</color>
+
+    <!-- graph -->
+    <color name="colorGraphBackground">#ffffff</color>
+</resources>

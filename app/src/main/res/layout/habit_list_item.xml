@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/list_item_margin"
+                  android:background="@drawable/list_selector"
+                  android:orientation="vertical"
+                    android:padding="10dp">
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:text="Habbit Item"
+            android:id="@+id/habitNameViewMain"
+
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:ems="5"
+                android:id="@+id/streakLabel"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:text="Streak: "/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:ems="5"
+                android:id="@+id/habitStreakView"
+                android:text="5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:ems="5"
+                android:id="@+id/timeLabel"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:text="Time: "/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:id="@+id/habitTimeView"
+                android:ems="5"
+                android:text="6:00PM - 7:30PM"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:ems="5"
+                android:id="@+id/weekDaysLabel"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:text="Days: "/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:id="@+id/habitDaysView"
+                android:ems="5"
+                android:text="Mon Tue Fri Sun"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

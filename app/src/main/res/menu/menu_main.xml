@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+<!--
+    <item android:id="@+id/action_edit_habits"
+        android:title="@string/action_edit_habit"
+        android:icon="@drawable/ic_dehaze_black_24dp"
+          app:showAsAction="ifRoom"
+          android:orderInCategory="1"
+        />
+-->
+    <item android:id="@+id/action_edit_user"
+        android:title="@string/action_loginout"
+        android:icon="@drawable/ic_toolbar_user_482"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_check_statistics"
+          android:title="check statistics"
+          android:icon="@drawable/ic_toolbar_graph_48"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/action_add_habit"
+      android:title="@string/action_new_habbit"
+      android:icon="@drawable/ic_toolbar_add_48"
+          app:showAsAction="always"/>
+
+
+</menu>
